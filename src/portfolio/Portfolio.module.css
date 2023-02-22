@@ -1,0 +1,25 @@
+.portfolioBlock {
+    min-height: 100vh;
+    background-color: silver;
+}
+
+.portfolioContainer {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.title {
+    background-color: #a5a5d0;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    border: 1px solid;
+    width: 100%;
+}

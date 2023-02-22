@@ -1,0 +1,28 @@
+.contactBlock {
+    height: 300px;
+    background-color: azure;
+
+}
+
+.contactContainer {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title {
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid;
+}
+
+.input {
+    width: 300px;
+}

@@ -1,0 +1,26 @@
+.mainBlock {
+    height: 100vh;
+    background-color: pink;
+}
+
+.mainContainer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        justify-content: center;
+    }
+}
+
+.about {
+    width: 300px;
+    background-color: beige;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: azure;
+}
