@@ -1,32 +1,39 @@
 import React from 'react';
-import classes from './Portfolio.module.css';
+import classes from './Portfolio.module.scss';
 import classesContainer from '../common/styles/Container.module.css'
-import {Project} from "./project/Project";
+import {Project} from './project/Project';
+import {Title} from '../common/components/title/Title';
+import todoImage from '../assets/image/todolist.jpeg'
 
 export const Portfolio = () => {
+
+    const todolist = {
+        backgroundImage: `url(${todoImage})`
+    }
+
     return (
         <div className={classes.portfolioBlock}>
             <div className={`${classesContainer.container} ${classes.portfolioContainer}`}>
-                <h3 className={classes.title}>Portfolio</h3>
+                <Title title={'Projects'}/>
                 <div className={classes.projects}>
                     <Project
+                        style={todolist}
                         tittle={'todolist'}
-                        description={'React todolist with redux...'}
+                        description={'React todolist with redux...React todolist with redux...React todolist with redux...'}
                         gitHubURL={''}
-                        imgURL={'https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
                     />
                     <Project
+                        style={todolist}
                         tittle={'todolist'}
                         description={'React todolist with redux...'}
                         gitHubURL={''}
-                        imgURL={'https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
                     />
                     <Project
+                        style={todolist}
                         tittle={'todolist'}
                         description={'React todolist with redux...'}
                         gitHubURL={''}
-                        imgURL={'https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
-                    />
+                   />
                 </div>
             </div>
         </div>

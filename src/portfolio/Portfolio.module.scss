@@ -1,0 +1,25 @@
+@import 'src/common/styles/sass/variables';
+
+.portfolioBlock {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .portfolioContainer {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      width: 100%;
+    }
+  }
+}

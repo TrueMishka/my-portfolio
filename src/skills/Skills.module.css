@@ -9,10 +9,6 @@
     flex-direction: column;
 }
 
-.title {
-    background-color: #d5cfb1;
-}
-
 .skills {
     display: flex;
     justify-content: center;
